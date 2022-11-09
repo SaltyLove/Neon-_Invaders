@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<style>
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Background_Main.jpg);
+    font-family: sans-serif;
+    font-size: 14px;
+ 
+}
+
+
+</style>
+
+<div  style = "position: relative; margin-top: 150px;" id = "parentDiv">
+    <p
+    id = "scoreC"
+    style =
+     "position: absolute; z-index: 10; color: rgb(255, 255, 255); left: 10px; top: 10px; margin: 0; display: none;">
+     <span>score:</span> <span id = "scoreEl">0</span>
+    </p>
+
+
+    <canvas></canvas>
+    <!--Background-->
+    <div
+    id = "StartScreen" 
+    style =
+     "Position : absolute;
+      top: 0;
+      right: 0;
+      bottom: 0; 
+      left: 0; 
+      background: url('./img/StartScreen.png');
+      z-index: 20;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;"
+      >
+      <div style="text-align: center">
+    <h1 style = "color: rgb(133, 44, 106);font-size: 40px;">Neon Invaders</h1>
+
+    <!--Button-->
+      <div id = "StartButton"
+    style = "cursor: pointer; position: relative;display: inline-block;">
+    <img src="./img/Button Normal.png">
+    <span style = "position: absolute;color: white;top: 50%; transform: translate(-50%, -50%); left: 50%; font-size: 22px;">Start</span>
+</div>
+
+
+<h4 style = "color: rgb(89, 165, 170);">Move with A & D</h4>
+<h4 style = "color: rgb(89, 165, 170);">Shoot with Space</h4>
+<h4 style = "color: rgb(89, 165, 170);">Hint: Shoot Bombs & Power Up's wise</h4>
+
+        </div>
+
+    </div>
+
+<!--Restart Screen-->
+   <!--Background-->
+   <div
+   id = "RestartScreen" 
+   style =
+    "Position : absolute;
+     top: 0;
+     right: 0;
+     bottom: 0; 
+     left: 0; 
+     background: url('./img/StartScreen.png');
+     z-index: 20;
+     background-size: contain;
+     background-repeat: no-repeat;
+     display: none;
+     align-items: center;
+     justify-content: center;"
+     >
+     <div style="text-align: center">
+   <h1 style = "color: rgb(133, 44, 106);">Game Over</h1>
+
+   <!--Button-->
+     <div id = "RestartButton"
+   style = "cursor: pointer; position: relative;display: inline-block;">
+   <img src="./img/Button Normal.png">
+   <span style = "position: absolute;color: white;top: 50%; transform: translate(-50%, -50%); left: 50%; font-size: 22px; ">Restart</span>
+</div>
+       </div>
+
+   </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+ integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" 
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src = "./classes.js"></script>
+<script src = "./Neon_Invader.js"></script>
+<script src = "./Audio.js"></script>
+
+
